@@ -4,14 +4,13 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     int    iCodCid;        //Código da Cidade
     char   sNomeCid[50];   //Nome da Cidade
-    double dPopulacao;     //População
+    int    iPopulacao;     //População
     float  fArea;          //Área
     double dPib;           //PIB
     int    iNumPtTur;      //Número de pontos turísticos 
@@ -22,13 +21,13 @@ int main() {
     printf("Informe o Código da Cidade:\n");
     scanf("%d", &iCodCid);
     printf("Informe o Nome da Cidade:\n");
-    scanf("%s", &sNomeCid);
+    scanf("%s", sNomeCid);
     printf("Informe a População da Cidade:\n");
-    scanf("%f", &dPopulacao);
+    scanf("%d", &iPopulacao);
     printf("Informe a Área da Cidade:\n");
-    scanf("%.2f", &fArea);
+    scanf("%f", &fArea);
     printf("Informe o Pib da Cidade:\n");
-    scanf("%.2f", &dPib);
+    scanf("%,2f", &dPib);
     printf("Informe o Número de Pontos Turísticos da Cidade:\n");
     scan("%d", &iNumPtTur);
     
@@ -37,7 +36,7 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     printf("Código da Cidade: %d\n", iCodCid);
     printf("Cidade: %s\n", sNomeCid);
-    printf("População: %f\n", dPopulacao);
+    printf("População: %d\n", iPopulacao);
     printf("Área: %.2f\n", fArea);
     printf("Pib: %.2f\n", dPib);
     printf("Número de Pontos Turísticos: %d\n", iNumPtTur);
